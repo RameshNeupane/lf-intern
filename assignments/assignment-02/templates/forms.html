@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/forms.css" />
+    <title>UI Kit - Forms</title>
+  </head>
+  <body>
+    <!-- HEADER FOR NAVIGATION -->
+    <header class="header">
+      <div class="logo"><a href="./index.html">UI Kit</a></div>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="./index.html">color</a></li>
+          <li><a href="./typography.html">typography</a></li>
+          <li><a href="./buttons.html">buttons</a></li>
+          <li><a href="./forms.html">forms</a></li>
+          <li><a href="">list group</a></li>
+          <li><a href="">tables</a></li>
+          <li><a href="">cards</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-search">
+        <form action="" method="post">
+          <input type="text" name="search" id="search" placeholder="Search" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </header>
+
+    <!-- MAIN SECTION FOR CONTENT DISPLAY -->
+    <main class="main">
+      <h1>Forms</h1>
+      <hr />
+
+      <!-- Container wrap for left and right components -->
+      <div class="container">
+        <!-- Left component -->
+        <div class="container-left">
+          <h2 class="sub-head-left">Components</h2>
+
+          <!-- Menu table -->
+          <table class="menu">
+            <tbody>
+              <tr>
+                <td id="color">Color</td>
+              </tr>
+
+              <tr>
+                <td>Typography</td>
+              </tr>
+
+              <tr>
+                <td>Buttons</td>
+              </tr>
+
+              <tr>
+                <td class="active">Forms</td>
+              </tr>
+
+              <tr>
+                <td>List Group</td>
+              </tr>
+
+              <tr>
+                <td>Table</td>
+              </tr>
+
+              <tr>
+                <td id="card">Card</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Right container -->
+        <div class="container-right">
+          <!-- Input section -->
+          <section>
+            <h2>Input</h2>
+            <input
+              type="text"
+              name="input"
+              id="input"
+              placeholder="Placeholder"
+              class="input"
+            />
+          </section>
+
+          <!-- Select menu section -->
+          <section>
+            <h2>Select menu</h2>
+            <select name="manu" id="menu" class="menu">
+              <option value="select menu">Select Menu</option>
+              <option value="color">Color</option>
+              <option value="typography">Typography</option>
+              <option value="buttons">Buttons</option>
+              <option value="forms">Forms</option>
+              <option value="list group">List Group</option>
+              <option value="table">Table</option>
+              <option value="card">Card</option>
+            </select>
+          </section>
+
+          <!-- Text area section -->
+          <section>
+            <h2>Text area</h2>
+            <textarea
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="8"
+              placeholder="Write something ..."
+              class="text-area"
+            ></textarea>
+          </section>
+
+          <!-- Checkboxes section -->
+          <section>
+            <h2>Checkboxes</h2>
+
+            <!-- Checkbox block section (left) -->
+            <div class="checkbox-block">
+              <h4>Checkboxes</h4>
+              <div>
+                <input
+                  type="checkbox"
+                  name="default-checkbox"
+                  id="default-checkbox"
+                  value="default-checkbox"
+                />
+                <label for="default-checkbox">Default Checkbox</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  name="checked-checkbox"
+                  id="checked-checkbox"
+                  value="checked-checkbox"
+                  checked
+                />
+                <label for="checked-checkbox">Checked Checkbox</label>
+              </div>
+
+              <div>
+                <input
+                  type="checkbox"
+                  name="disabled-checkbox"
+                  id="disabled-checkbox"
+                  value="disabled-checkbox"
+                  disabled
+                />
+                <label for="disabled-checkbox">Disabled Checkbox</label>
+              </div>
+            </div>
+
+            <!-- Checkbox inline section (right) -->
+            <div class="checkbox-inline">
+              <h4>Checkboxes Inline</h4>
+              <div class="checkbox-float-right">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="default-checkbox"
+                    id="default-checkbox"
+                    value="default-checkbox"
+                  />
+                  <label for="default-checkbox">Default Checkbox</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    name="checked-checkbox"
+                    id="checked-checkbox"
+                    value="checked-checkbox"
+                    checked
+                  />
+                  <label for="checked-checkbox">Checked Checkbox</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    name="disabled-checkbox"
+                    id="disabled-checkbox"
+                    value="disabled-checkbox"
+                    disabled
+                  />
+                  <label for="disabled-checkbox">Disabled Checkbox</label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Radio Input Section -->
+          <section class="section-radio">
+            <h2>Radios</h2>
+
+            <!-- Radio block section (left) -->
+            <div class="radio-block">
+              <h4>Radios</h4>
+              <div>
+                <input
+                  type="radio"
+                  name="radio"
+                  id="default-radio"
+                  value="default-radio"
+                />
+                <label for="radio-checkbox">Default Radio</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="radio"
+                  id="checked-radio"
+                  value="checked-radio"
+                  checked
+                />
+                <label for="checked-radio">Checked Radio</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="radio"
+                  id="disabled-radio"
+                  value="disabled-radio"
+                  disabled
+                />
+                <label for="disabled-radio">Disabled Radio</label>
+              </div>
+            </div>
+
+            <!-- Radios inline section (right) -->
+            <div class="radio-inline">
+              <h4>Checkboxes Inline</h4>
+              <div class="radio-float-right">
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-inline"
+                    id="default-radio-inline"
+                    value="default-radio-inline"
+                  />
+                  <label for="default-radio-inline">Default Radio</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-inline"
+                    id="checked-radio-inline"
+                    value="checked-radio-inline"
+                    checked
+                  />
+                  <label for="checked-radio-inline">Checked Radio</label>
+                </div>
+
+                <div>
+                  <input
+                    type="radio"
+                    name="radio-inline"
+                    id="disabled-radio-inline"
+                    value="disabled-radio-inline"
+                    disabled
+                  />
+                  <label for="disabled-radio-inline">Disabled Radio</label>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Validation section -->
+          <section class="val-section">
+            <h2>Validation</h2>
+
+            <!-- success input section -->
+            <div>
+              <span>Input Success</span>
+              <input type="text" name="success" id="success" class="input" />
+            </div>
+
+            <!-- Error input section -->
+            <div>
+              <span>Input Error</span>
+              <input type="text" name="error" id="error" class="input" />
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
