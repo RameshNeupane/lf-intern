@@ -85,98 +85,71 @@ body {
   border-color: #d3d3d3;
 }
 
-.section-primary {
-  padding: 50px 0;
+.btn-container {
+  margin: 50px 0;
 }
 
-.color {
-  float: left;
-  width: 200px;
-  margin-right: 50px;
+.table-primary,
+.table-secondary {
+  width: 750px;
+  text-align: center;
+  /* border: 1px solid black; */
 }
 
-.color div {
+.table-heading {
+  text-align: left;
+}
+
+.table-primary td,
+.table-secondary td {
+  width: 150px;
   height: 100px;
-  width: 200px;
-  border-radius: 5px;
-}
-
-.color p {
-  font-size: 15px;
-  text-transform: uppercase;
+  /* text-align: left; */
   color: #696969;
+  /* border: 1px solid black; */
 }
 
-#color-primary {
-  background-color: #7747f8;
+.btn {
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px 5px;
+  font-size: 20px;
+  font-weight: bold;
+  /* border: 1px solid black; */
+  width: 100px;
+  cursor: pointer;
 }
 
-#color-primary-dark {
+.btn-primary-default,
+.btn-outline-hover {
+  background-color: #7749f8;
+  color: white;
+}
+
+.btn-primary-hover,
+.btn-primary-focus {
   background-color: #5227cc;
+  color: white;
 }
 
-#color-primary-light {
-  background-color: #ebe5fc;
+.btn-outline-default {
+  border: 2px solid #7749f8;
+  color: #7749f8;
 }
 
-.section-secondary {
-  float: none;
-  clear: both;
-  padding: 50px 0;
-}
-
-#color-secondary {
+.btn-secondary-default,
+.btn-sec-outline-hover {
   background-color: #566573;
+  color: white;
 }
 
-#color-secondary-dark {
+.btn-secondary-hover,
+.btn-secondary-focus {
   background-color: #212f3d;
+  color: white;
 }
 
-#color-secondary-light {
-  background-color: #abb2b9;
-}
-
-.section-status {
-  float: none;
-  clear: both;
-  padding: 50px 0;
-}
-
-#color-success {
-  background-color: #28a745;
-}
-
-#color-danger {
-  background-color: #dc3545;
-}
-
-#color-warning {
-  background-color: #ffc107;
-}
-
-#color-info {
-  background-color: #17a2b8;
-}
-
-.section-gray {
-  float: none;
-  clear: both;
-  padding: 50px 0;
-}
-
-#color-gray-600 {
-  background-color: #6c757d;
-}
-
-#color-gray-700 {
-  background-color: #495057;
-}
-
-#color-gray-800 {
-  background-color: #343a40;
-}
-
-#color-gray-900 {
-  background-color: #212529;
+.btn-sec-outline-default {
+  border: 2px solid #566573;
+  color: #566573;
 }

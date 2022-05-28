@@ -44,6 +44,10 @@ body {
   text-transform: capitalize;
 }
 
+.nav ul li a:hover {
+  color: #212f3d;
+}
+
 .header-search {
   float: right;
   padding: 26px 0;
