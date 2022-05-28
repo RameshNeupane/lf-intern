@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.header {
+  height: 100px;
+  padding: 0 200px;
+  background-color: #f8f8f8;
+}
+
+.logo a {
+  margin: 0;
+  float: left;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 32px 0;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.nav {
+  height: 100px;
+  float: left;
+}
+
+.nav ul li {
+  padding: 20px 0;
+  float: left;
+  list-style-type: none;
+  margin: 0 10px;
+}
+
+.nav ul li a {
+  height: 100%;
+  float: none;
+  text-decoration: none;
+  font-size: 18px;
+  color: #696969;
+  text-transform: capitalize;
+}
+
+.nav ul li a:hover {
+  color: #212f3d;
+}
+
+.header-search {
+  float: right;
+  padding: 26px 0;
+}
+
+.header-search form input {
+  outline: none;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  height: 35px;
+  width: 200px;
+  background-color: transparent;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.header-search form button {
+  outline: none;
+  height: 43px;
+  width: 100px;
+  border: 1px solid #28a745;
+  border-radius: 5px;
+  color: #28a745;
+  background-color: transparent;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+
+.main {
+  padding: 0 200px;
+}
+
+.main hr {
+  background-color: #d3d3d3;
+  border-color: #d3d3d3;
+}
+
+.card-left {
+  float: left;
+  margin: 50px 80px 0 0;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.sec-top {
+  padding: 10px;
+}
+
+.profile-pic {
+  float: left;
+  width: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+  padding-top: 10px;
+}
+
+.sec-top div {
+  float: left;
+  width: 150px;
+}
+
+.username {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  padding-top: 10px;
+}
+
+.sec-top div p {
+  font-size: 15px;
+  color: #696969;
+  margin-top: 5px;
+}
+
+.sec-top .three-dot {
+  float: right;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 15px 10px 0 0;
+}
+
+.three-dot span {
+  display: block;
+  line-height: 0.3;
+}
+
+.sec-mid {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.post {
+  width: 350px;
+  height: 350px;
+}
+
+.icon {
+  width: 30px;
+  padding: 10px 42px;
+}
+
+.sec-bottom {
+  padding: 10px 20px;
+}
+
+.sec-bottom img {
+  float: left;
+  width: 40px;
+  border-radius: 50px;
+  /* padding-top: 0px; */
+  margin-right: 10px;
+}
+
+.sec-bottom input {
+  /* float: left; */
+  outline: none;
+  border: 2px solid #d3d3d3;
+  height: 30px;
+  width: 240px;
+  border-radius: 20px;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.card-mid {
+  float: left;
+  margin: 50px 80px 0 0;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.img-meditate {
+  width: 350px;
+  /* height: 300px; */
+}
+
+.btn-container {
+  position: relative;
+  padding: 0 140px;
+}
+
+.btn-container a {
+  position: absolute;
+  transform: translateY(-45px);
+  background-color: #28a745;
+  border-radius: 50px;
+}
+
+.play-btn {
+  padding: 15px;
+  width: 40px;
+}
+
+.info {
+  width: 350px;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.card-right {
+  float: left;
+  margin: 50px 80px 0 0;
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.right-card-sec-top {
+  float: left;
+  margin-top: 10px;
+  padding: 10px;
+  width: 350px;
+}
+
+.right-card-sec-top a {
+  text-decoration: none;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  /* transform: translateY(10px); */
+}
+
+.right-card-sec-top p {
+  margin: 15px 0 10px 0;
+}
+
+#posted-by {
+  color: #696969;
+  margin: 0 0 10px 0;
+}
+
+.right-card-lamp {
+  width: 350px;
+  height: 350px;
+}
+
+.right-card-sec-bottom {
+  padding: 10px 20px;
+}
+
+.right-card-profile-sec {
+  float: left;
+  margin-right: 20px;
+}
+
+.right-card-profile-img,
+.chat-bubble,
+.heart {
+  width: 30px;
+}
+
+.right-card-profile-img {
+  border-radius: 50px;
+  float: left;
+  margin-right: 5px;
+}
+
+.right-card-username {
+  float: left;
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+.right-card-chat-sec,
+.right-card-like-sec {
+  float: left;
+}
+
+.right-card-chat-sec {
+  margin-right: 20px;
+}
+
+.chat-bubble,
+.num-chats,
+.heart,
+.num-likes {
+  float: left;
+}
+
+.chat-bubble,
+.heart,
+right {
+  margin: 5px;
+}
+
+.num-chats,
+.num-likes {
+  margin: 10px 0;
+}
