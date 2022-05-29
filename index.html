@@ -4,70 +4,101 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
-    <title>LF Internship</title>
+    <title>Leapfrog Internship</title>
   </head>
   <body>
-    <h1>Leapfrog Intern Assignment</h1>
+    <!-- Video animation that play in the background side of the page -->
+    <video autoplay muted loop id="back-video">
+      <source src="./background-video.mp4" type="video/mp4" />
+    </video>
 
-    <div class="intern-info">
-      <span>Ramesh Neupane</span><span>Roll No: 27</span><span>Group: G</span>
-    </div>
+    <!-- Main container -->
+    <div class="container">
+      <h1 class="title">Leapfrog Internship Assignments</h1>
 
-    <div>
-      <table border="1px">
-        <thead>
-          <tr>
-            <th>Assignment</th>
-            <th>Title</th>
-            <th>Demo</th>
-            <th>Code</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="2">Assignment 01</td>
-            <td>html assignment</td>
-            <td>
-              <a href="./assignments/assignment-01/html-assignment/index.html"
-                >Demo</a
-              >
-            </td>
-            <td>
-              <a
-                href="https://github.com/RameshNeupane/lf-intern/blob/master/assignments/assignment-01/html-assignment/index.html"
-                >Code</a
-              >
-            </td>
-          </tr>
+      <!-- Details of internee -->
+      <div class="intern-info">
+        <span>Ramesh Neupane</span><span>Roll No: 27</span><span>Group: G</span>
+      </div>
 
-          <tr>
-            <td>low-fi assignment</td>
-            <td colspan="2">
-              <a
-                href="https://github.com/RameshNeupane/lf-intern/tree/master/assignments/assignment-01/low-fi-assignment"
-                >Demo</a
-              >
-            </td>
-          </tr>
+      <!-- Assignments section -->
+      <div class="assignment-container">
+        <!-- Assignment 1.1 Section -->
+        <section class="assignment">
+          <!-- Assignment info section -->
+          <div class="assignment-info">
+            <div class="asg-num">Assignment 1.1</div>
+            <div class="asg-title">html assignment</div>
+          </div>
 
-          <tr>
-            <td>Assignment 02</td>
-            <td>CSS Design</td>
-            <td>
-              <a href="./assignments/assignment-02/templates/index.html"
-                >Demo</a
-              >
-            </td>
-            <td>
-              <a
-                href="https://github.com/RameshNeupane/lf-intern/tree/master/assignments/assignment-02/"
-                >Code</a
-              >
-            </td>
-          </tr>
-        </tbody>
-      </table>
+          <!-- Assignment demo and code buttons section -->
+          <div class="assignment-btns">
+            <a
+              href="./assignments/assignment-01/html-assignment/index.html"
+              target="_blank"
+              class="demo-btn"
+              >demo</a
+            >
+            <a
+              href="https://github.com/RameshNeupane/lf-intern/blob/master/assignments/assignment-01/html-assignment/index.html"
+              target="_blank"
+              class="code-btn"
+              >code</a
+            >
+          </div>
+        </section>
+
+        <!-- Assignment 1.2 Section -->
+        <section class="assignment">
+          <!-- Assignment info section -->
+          <div class="assignment-info">
+            <div class="asg-num">Assignment 1.2</div>
+            <div class="asg-title">low-fi assignment</div>
+          </div>
+
+          <!-- Assignment demo and code buttons section -->
+          <div class="assignment-btns">
+            <a
+              href="https://github.com/RameshNeupane/lf-intern/tree/master/assignments/assignment-01/low-fi-assignment"
+              target="_blank"
+              class="demo-btn"
+              >demo</a
+            >
+          </div>
+        </section>
+
+        <!-- Assignment 2 Section -->
+        <section class="assignment">
+          <!-- Assignment info section -->
+          <div class="assignment-info">
+            <div class="asg-num">Assignment 2.0</div>
+            <div class="asg-title">CSS design</div>
+          </div>
+
+          <!-- Assignment demo and code buttons section -->
+          <div class="assignment-btns">
+            <a
+              href="./assignments/assignment-02/templates/index.html"
+              target="_blank"
+              class="demo-btn"
+              >demo</a
+            >
+            <a
+              href="https://github.com/RameshNeupane/lf-intern/tree/master/assignments/assignment-02/"
+              target="_blank"
+              class="code-btn"
+              >code</a
+            >
+          </div>
+        </section>
+      </div>
     </div>
 
     <script src="script.js"></script>
