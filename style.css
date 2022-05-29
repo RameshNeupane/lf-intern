@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
   color: white;
   text-transform: capitalize;
-  /* text-align: center; */
 }
 
 #back-video {
@@ -37,7 +36,7 @@ body {
 
 .title {
   font-size: 60px;
-  font-weight: 800px;
+  font-weight: 800;
 }
 
 .intern-info {
@@ -47,6 +46,7 @@ body {
   justify-content: space-around;
   background-color: rgba(50, 0, 0, 0.6);
   font-size: 30px;
+  font-weight: 600;
   padding: 20px;
   border-radius: 10px;
 }
@@ -79,7 +79,7 @@ body {
 
 .asg-num {
   font-size: 20px;
-  font-weight: 600px;
+  font-weight: 600;
   text-decoration: underline;
   margin-bottom: 10px;
 }
