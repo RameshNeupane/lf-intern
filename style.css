@@ -10,6 +10,7 @@ body {
   min-height: 100vh;
   color: white;
   text-transform: capitalize;
+  text-align: center;
 }
 
 #back-video {
@@ -111,4 +112,10 @@ body {
 .code-btn:hover {
   background-color: rgba(50, 0, 0, 1);
   transition: background-color 1s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .assignment-container {
+    width: 95%;
+  }
 }
