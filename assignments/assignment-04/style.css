@@ -58,21 +58,27 @@ body {
 
 .menu {
   float: right;
-  padding: 45px 48px 45px 0;
+  padding: 30px 43px 30px 0;
 
   display: none;
 }
 
 .menu span {
   display: block;
-  width: 35px;
-  height: 5px;
+  width: 30px;
+  height: 1px;
+  border: 1px solid black;
+  border-radius: 5px;
   background-color: black;
   margin: 6px 0;
 }
 
 .nav {
   float: right;
+}
+
+.nav ul {
+  display: block;
 }
 
 .nav ul li {
@@ -359,6 +365,7 @@ body {
   .container-main {
     max-width: 576px;
     margin: 0 auto;
+    overflow-x: hidden;
   }
 
   .header {
@@ -369,13 +376,60 @@ body {
     padding: 20px 40px 37px 40px;
   }
 
-  .nav {
+  .menu {
     float: right;
+    position: relative;
+    padding: 25px 43px 30px 0;
+    cursor: pointer;
+    display: block;
+  }
+
+  .menu span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 5px 0;
+  }
+
+  .menu.active {
+    padding-top: 35px;
+    margin-right: 38px;
+  }
+
+  .menu.active span {
+    position: absolute;
+  }
+
+  .menu.active span:last-child {
     display: none;
   }
 
+  .menu.active span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .menu.active span:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+
+  .nav {
+    float: right;
+    display: none;
+    width: 100%;
+    transform: translateX(100%);
+  }
+
+  .nav.active {
+    display: block;
+    transform: translateX(0);
+  }
+
   .nav ul li {
-    float: left;
+    float: none;
+    clear: both;
+    width: 100%;
+    text-align: center;
     list-style-type: none;
     font-size: 16px;
     font-weight: 600;
