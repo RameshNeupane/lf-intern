@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/cards.css" />
+    <title>Assignment 5 - Cards</title>
+  </head>
+  <body>
+    <!-- 
+      Time Estimation
+      ----------------
+      Left Card: 25 min
+      Middle Card: 15 min
+      Right Card: 25 min
+    -->
+
+    <!-- header section -->
+    <div class="wrapper-header">
+      <header class="header">
+        <div class="logo"><a href="./index.html">UI Kit</a></div>
+
+        <!-- navigation bar -->
+        <nav class="navBar">
+          <ul>
+            <li><a href="./index.html">color</a></li>
+            <li><a href="./typography.html">typography</a></li>
+            <li><a href="./buttons.html">buttons</a></li>
+            <li><a href="./forms.html">forms</a></li>
+            <li><a href="./list-group.html">list group</a></li>
+            <li><a href="./tables.html">table</a></li>
+            <li><a href="./cards.html">cards</a></li>
+          </ul>
+        </nav>
+
+        <!-- search section -->
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="input-search"
+            placeholder="Search"
+          />
+          <button type="submit" class="btn-search">Search</button>
+        </div>
+      </header>
+    </div>
+
+    <!-- MAIN SECTION FOR CONTENT DISPLAY -->
+    <section class="body-wrapper">
+      <h1 class="title">Cards</h1>
+      <hr />
+
+      <!-- Left card -->
+      <div class="card-left">
+        <!-- Left card's top section -->
+        <section class="sec-top">
+          <img
+            src="../images/rn.png"
+            alt="Ramesh Neupane"
+            class="profile-pic"
+          />
+          <div>
+            <a href="#" class="username">Stuar Manson</a>
+            <p>Publicado hace 2 horas</p>
+          </div>
+          <a href="#" class="three-dot">
+            <span>.</span><span>.</span><span>.</span>
+          </a>
+        </section>
+
+        <!-- Left card's mid section -->
+        <section class="sec-mid">
+          <img
+            src="../images/taylor-heery-q6Aowpij5_s-unsplash.jpg"
+            alt="flower"
+            class="post"
+          />
+          <div>
+            <a href="#"
+              ><img src="../images/like.png" alt="like" class="icon"
+            /></a>
+            <a href="#"
+              ><img src="../images/chat-bubble.png" alt="comment" class="icon"
+            /></a>
+            <a href="#"
+              ><img src="../images/share.png" alt="share" class="icon"
+            /></a>
+          </div>
+        </section>
+
+        <!-- Left card's bottom section -->
+        <section class="sec-bottom">
+          <img src="../images/rn.png" alt="Ramesh Neupane" />
+          <input
+            type="text"
+            name="comment"
+            id="comment"
+            placeholder="Enter your comment"
+          />
+        </section>
+      </div>
+
+      <!-- Middle card -->
+      <div class="card-mid">
+        <img
+          src="../images/madison-lavern-4gcqRf3-f2I-unsplash.jpg"
+          alt="meditation"
+          class="img-meditate"
+        />
+
+        <div class="btn-container">
+          <a href="#" title="play"
+            ><img
+              src="../images/play-button.png"
+              alt="play button"
+              class="play-btn"
+          /></a>
+        </div>
+
+        <div class="info">
+          <p>Meditaciones ne casa</p>
+          <p>Susan Paz</p>
+        </div>
+      </div>
+
+      <!-- Right Card -->
+      <div class="card-right">
+        <!-- Right card's top section -->
+        <section class="right-card-sec-top">
+          <a href="#">Home</a>
+          <p>Lampara Look</p>
+          <p id="posted-by">by Saca Tuerca</p>
+        </section>
+
+        <img
+          src="../images/david-van-dijk-3LTht2nxd34-unsplash.jpg"
+          alt="lamp"
+          class="right-card-lamp"
+        />
+
+        <!-- Right card's bottom section -->
+        <section class="right-card-sec-bottom">
+          <div class="right-card-profile-sec">
+            <img
+              src="../images/rn.png"
+              alt="Ramesh Neupane"
+              class="right-card-profile-img"
+            />
+            <p class="right-card-username">Felipe Sacudon</p>
+          </div>
+
+          <div class="right-card-chat-sec">
+            <img
+              src="../images/chat-bubble.png"
+              alt="chat-bubble"
+              class="chat-bubble"
+            />
+            <p class="num-chats">22</p>
+          </div>
+
+          <div class="right-card-like-sec">
+            <img src="../images/heart.png" alt="likes" class="heart" />
+            <p class="num-likes">20</p>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>

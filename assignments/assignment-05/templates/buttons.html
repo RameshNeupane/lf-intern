@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/buttons.css" />
+    <title>Assignment 5 - Buttons</title>
+  </head>
+  <body>
+    <!-- 
+      Time estimation to create buttons component: 20 min
+    -->
+    <!-- header section -->
+    <div class="wrapper-header">
+      <header class="header">
+        <div class="logo"><a href="./index.html">UI Kit</a></div>
+
+        <!-- navigation bar -->
+        <nav class="navBar">
+          <ul>
+            <li><a href="./index.html">color</a></li>
+            <li><a href="./typography.html">typography</a></li>
+            <li><a href="./buttons.html">buttons</a></li>
+            <li><a href="./forms.html">forms</a></li>
+            <li><a href="./list-group.html">list group</a></li>
+            <li><a href="./tables.html">table</a></li>
+            <li><a href="./cards.html">cards</a></li>
+          </ul>
+        </nav>
+
+        <!-- search section -->
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="input-search"
+            placeholder="Search"
+          />
+          <button type="submit" class="btn-search">Search</button>
+        </div>
+      </header>
+    </div>
+
+    <section class="body-wrapper">
+      <div class="buttons-container">
+        <h1 class="title">Buttons</h1>
+        <hr />
+
+        <!-- Primary Button Container -->
+        <div class="btn-container">
+          <h2>Primary Buttons</h2>
+          <hr />
+
+          <!-- Table for Primary Buttons Section -->
+          <table class="table-primary">
+            <tbody>
+              <tr>
+                <td></td>
+                <td class="table-heading">default</td>
+                <td class="table-heading">outline</td>
+              </tr>
+              <tr>
+                <td>default</td>
+                <td><div class="btn btn-primary-default">Primary</div></td>
+                <td><div class="btn btn-outline-default">Outline</div></td>
+              </tr>
+              <tr>
+                <td>hover</td>
+                <td><div class="btn btn-primary-hover">Primary</div></td>
+                <td><div class="btn btn-outline-hover">Outline</div></td>
+              </tr>
+              <tr>
+                <td>focus</td>
+                <td><div class="btn btn-primary-focus">Primary</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

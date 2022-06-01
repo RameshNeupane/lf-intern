@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapper-header {
+  max-width: 100%;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+.header {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.logo {
+  float: left;
+  margin: 3rem 5rem 3rem 0;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+
+.navBar {
+  float: left;
+  margin-top: 4rem;
+}
+
+.navBar ul li {
+  list-style-type: none;
+  float: left;
+  margin-right: 2rem;
+}
+
+.navBar ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #696969;
+  text-transform: capitalize;
+}
+
+.navBar ul li a:hover {
+  color: #212f3d;
+}
+
+.search {
+  float: right;
+  margin-top: 2.5rem;
+}
+
+.input-search,
+.btn-search {
+  height: 4rem;
+  font-size: 1.5rem;
+}
+
+.input-search {
+  outline: none;
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  background-color: white;
+  padding-left: 0.5rem;
+}
+
+.btn-search {
+  border: 2px solid #28a745;
+  border-radius: 0.5rem;
+  color: #28a745;
+  background-color: transparent;
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.body-wrapper {
+  width: 85%;
+  margin: 2rem auto;
+}
+
+.forms-container {
+  width: 100%;
+}
+
+.title {
+  font-size: 4rem;
+}
+
+hr {
+  margin: 2rem 0;
+  background-color: #696969;
+  border: 1px solid #696969;
+}
+
+.container {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.container-left {
+  width: 35%;
+  float: left;
+}
+
+.sub-head-left {
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+
+.menu {
+  width: 100%;
+  border: 1px solid #696969;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 0.5rem;
+}
+
+.menu td {
+  border: 1px solid #696969;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+#color {
+  border-radius: 0.5rema 0.5rema 0 0;
+}
+
+#card {
+  border-radius: 0 0 0.5rema 0.5rema;
+}
+
+.menu .active {
+  background-color: #7749f8;
+  color: white;
+}
+
+.container-right {
+  float: right;
+  width: 50%;
+}
+
+.container-right section {
+  margin: 2rem 0;
+}
+
+.container-right section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-right .input,
+.container-right .menu,
+.container-right .text-area {
+  outline: none;
+  border: 2px solid #696969;
+  border-radius: 0.5rem;
+  width: 60%;
+  padding-left: 2rem;
+}
+
+.container-right .input,
+.container-right .menu {
+  height: 5rem;
+}
+
+.checkbox-block,
+.radio-block {
+  float: left;
+  width: 30%;
+}
+
+.checkbox-block div,
+.radio-block div {
+  margin: 2rem 0;
+}
+
+.checkbox-inline,
+.radio-inline {
+  float: right;
+}
+
+.checkbox-float-right div,
+.radio-float-right div {
+  float: left;
+  margin-right: 2rem;
+}
+
+.checkbox-block input,
+.checkbox-inline input,
+.radio-block input,
+.radio-inline input {
+  background-color: #7749f8;
+  font-size: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.checkbox-block label,
+.checkbox-inline label,
+.radio-block label,
+.radio-inline label {
+  font-size: 1.5rem;
+}
+
+.section-radio,
+.val-section {
+  clear: both;
+  padding: 5rem 0;
+}
+
+.val-section div {
+  margin-bottom: 3rem;
+}
+
+.val-section div span {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+#success,
+#success:focus {
+  border-color: #28a745;
+}
+
+#error,
+#error:focus {
+  border-color: #dc3545;
+}

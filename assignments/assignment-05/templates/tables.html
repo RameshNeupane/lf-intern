@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/tables.css" />
+    <title>Assignment 5 - Tables</title>
+  </head>
+  <body>
+    <!-- 
+      Time Estimation to create table component: 20 min
+    -->
+    <!-- header section -->
+    <div class="wrapper-header">
+      <header class="header">
+        <div class="logo"><a href="./index.html">UI Kit</a></div>
+
+        <!-- navigation bar -->
+        <nav class="navBar">
+          <ul>
+            <li><a href="./index.html">color</a></li>
+            <li><a href="./typography.html">typography</a></li>
+            <li><a href="./buttons.html">buttons</a></li>
+            <li><a href="./forms.html">forms</a></li>
+            <li><a href="./list-group.html">list group</a></li>
+            <li><a href="./tables.html">table</a></li>
+            <li><a href="./cards.html">cards</a></li>
+          </ul>
+        </nav>
+
+        <!-- search section -->
+        <div class="search">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            class="input-search"
+            placeholder="Search"
+          />
+          <button type="submit" class="btn-search">Search</button>
+        </div>
+      </header>
+    </div>
+
+    <section class="body-wrapper">
+      <div class="tables-container">
+        <h1 class="title">Table</h1>
+        <hr />
+
+        <!-- Table section -->
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First</th>
+              <th>Last</th>
+              <th>Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+
+            <tr>
+              <td>2</td>
+              <td>Jacob</td>
+              <td>Thronton</td>
+              <td>@fat</td>
+            </tr>
+
+            <tr>
+              <td>3</td>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Pagination section -->
+        <div class="pagination">
+          <ul>
+            <li><a href="#" class="disabled">Prev</a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">Next</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
