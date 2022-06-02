@@ -34,9 +34,10 @@ body {
   border-radius: 4px;
 }
 
-.container-main {
+.wrapper-1440 {
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .header {
@@ -105,6 +106,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 0;
+  overflow: hidden;
 }
 
 .desc {
@@ -148,6 +150,7 @@ body {
   max-width: 1440px;
   margin: 0 auto;
   padding: 10px 0;
+  overflow: hidden;
 }
 
 .what-we-do {
@@ -203,11 +206,15 @@ body {
   margin-bottom: 20px;
 }
 
+.wrapper-blog {
+  width: 100%;
+  background: #f8f8f8;
+  overflow: hidden;
+}
+
 .blog-container {
   clear: both;
   max-width: 1440px;
-  left: 0px;
-  background: #f8f8f8;
   margin: 0 auto;
   padding: 50px 0;
 }
@@ -232,7 +239,7 @@ body {
 
 .blog-card-container {
   width: 1200px;
-  margin: 0 120px 71px 120px;
+  margin: 0 auto;
 }
 
 .blog-card {
@@ -276,8 +283,13 @@ body {
   width: 305px;
 }
 
+.wrapper-view-all {
+  width: 100%;
+}
+
 .btn-view-all {
   display: block;
+  text-align: center;
   width: fit-content;
   margin: 0 auto;
   clear: both;
@@ -287,10 +299,17 @@ body {
   font-weight: 700;
 }
 
+.wrapper-footer {
+  width: 100%;
+  /* background: #f8f8f8; */
+  overflow: hidden;
+  background-color: #292838;
+}
+
 .footer {
   clear: both;
   width: 1440px;
-  background-color: #292838;
+  margin: 0 auto;
 }
 
 .footer-top {
@@ -362,6 +381,9 @@ body {
 /* responsive css for mobile with the width of 576 px */
 
 @media screen and (max-width: 576px) {
+  .wrapper-1440 {
+    max-width: 576px;
+  }
   .container-main {
     max-width: 576px;
     margin: 0 auto;
