@@ -14,14 +14,15 @@ body {
 
 .header__top {
   width: 100%;
-  background-image: url("../images-and-icons/background.png");
+  background-color: #252b42;
+  /* background-image: url("../images-and-icons/background.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 90%;
   margin: 0 auto;
   overflow: hidden;
   clear: both;
@@ -36,20 +37,28 @@ body {
   margin: 3.6rem 0;
 }
 
-.nav {
+.wrapper__toggle {
   float: right;
-  margin: 4.5rem 0;
+  margin: 4rem 0;
 }
 
-.nav ul {
-  float: left;
-  margin-right: 3rem;
+.icn__toggle {
+  cursor: pointer;
+}
+
+.nav {
+  float: none;
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  display: none;
 }
 
 .nav ul li {
-  float: left;
   list-style-type: none;
-  margin-left: 2rem;
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
 }
 
 .nav ul li a {
@@ -65,13 +74,14 @@ body {
 }
 
 .header__icons {
-  float: right;
+  width: 100%;
+  margin-top: 2rem;
 }
 
 .search-wrapper,
 .cart-wrapper {
-  float: left;
-  margin-left: 2rem;
+  width: fit-content;
+  margin: 1rem auto;
 }
 
 .btn__search,
@@ -80,35 +90,35 @@ body {
 }
 
 .banner__main {
-  width: 90rem;
-  margin: 15rem auto;
-  overflow: hidden;
+  width: 100%;
+  margin: 5rem auto;
 }
 
 .banner__title {
-  width: 71rem;
+  width: 90%;
   margin: 0 auto;
 }
 
 .banner__title h1 {
-  font-size: 5.8rem;
+  font-size: 3rem;
   font-weight: 800;
   text-align: center;
   color: white;
 }
 
 .banner__text {
-  width: 54rem;
+  width: 90%;
   margin: 4rem auto;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
   color: white;
 }
 
 .banner__btns {
-  width: 35rem;
+  width: 80%;
   margin: 4rem auto;
+  overflow: hidden;
 }
 
 .btn {
@@ -151,28 +161,38 @@ body {
   width: 100%;
   background-color: white;
   overflow: hidden;
-  padding: 0 2rem;
-  margin: -4rem auto 4rem auto;
+  padding: 1rem;
+  /* margin: -4rem auto 4rem auto; */
 }
 
+.cards__left {
+  width: 100%;
+  overflow: hidden;
+}
+
+.cards__right {
+  width: 100%;
+  overflow: hidden;
+}
 .card {
-  width: calc(100% / 4);
+  width: calc(100% / 2);
   float: left;
-  padding: 2rem 0 2rem 2rem;
+  /* background-color: lightblue; */
+}
+
+.card__main {
+  margin: 2rem;
 }
 
 .wrapper-icon {
-  float: left;
-  margin-right: 1rem;
-}
-
-.card__text {
-  float: left;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .card__count,
 .card__title {
   display: block;
+  text-align: center;
 }
 
 .card__count {

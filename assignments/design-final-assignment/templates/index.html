@@ -22,7 +22,16 @@
         <!-- container that wraps navigation bar -->
         <div class="container">
           <a href="./index.html" class="header__logo">Nasscorp</a>
+          <!-- toggle navigation button for mobile view -->
+          <div class="wrapper__toggle">
+            <img
+              src="../images-and-icons/navbar-toggler-icon.svg"
+              alt="icon menu toggle"
+              class="icn__toggle"
+            />
+          </div>
 
+          <!-- navigation section -->
           <nav class="nav">
             <ul>
               <li><a href="./index.html">Home</a></li>
@@ -31,7 +40,9 @@
               <li><a href="#">Contact</a></li>
             </ul>
 
+            <!-- search and cart icons -->
             <div class="header__icons">
+              <!-- search icon -->
               <div class="search-wrapper">
                 <a href="#" class="search__link">
                   <img
@@ -41,6 +52,7 @@
                   />
                 </a>
               </div>
+              <!-- cart icon -->
               <div class="cart-wrapper">
                 <a href="#" class="cart__link">
                   <img
@@ -66,7 +78,7 @@
                 just do not act that way.
               </p>
             </div>
-
+            <!-- banner buttons -->
             <div class="banner__btns">
               <a href="#" class="btn btn--primary">Get Quote Now</a>
               <a href="" class="btn btn--secondary">Learn More</a>
@@ -78,67 +90,78 @@
       <!-- header bottom section -->
       <div class="header__bottom">
         <div class="container">
+          <!-- header info section after the banner section -->
           <div class="header__cards">
-            <div class="card">
-              <div class="card__main">
-                <div class="wrapper-icon">
-                  <img
-                    src="../images-and-icons/icn-happy-customer.svg"
-                    alt="happy customers"
-                    class="card__img"
-                  />
+            <!-- info section left for desktop view or top for mobile and tab view -->
+            <div class="cards__left">
+              <!-- first card left/top -->
+              <div class="card">
+                <div class="card__main">
+                  <div class="wrapper-icon">
+                    <img
+                      src="../images-and-icons/icn-happy-customer.svg"
+                      alt="happy customers"
+                      class="card__img"
+                    />
+                  </div>
+                  <div class="card__text">
+                    <span class="card__count">1.5K</span>
+                    <span class="card__title">happy coustomers</span>
+                  </div>
                 </div>
-                <div class="card__text">
-                  <span class="card__count">1.5K</span>
-                  <span class="card__title">happy coustomers</span>
+              </div>
+
+              <!-- second card left/top -->
+              <div class="card">
+                <div class="card__main">
+                  <div class="wrapper-icon">
+                    <img
+                      src="../images-and-icons/icn-case-done.svg"
+                      alt="cases done"
+                      class="card__img"
+                    />
+                  </div>
+                  <div class="card__text">
+                    <span class="card__count">3K</span>
+                    <span class="card__title">cases done</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="card">
-              <div class="card__main">
-                <div class="wrapper-icon">
-                  <img
-                    src="../images-and-icons/icn-case-done.svg"
-                    alt="cases done"
-                    class="card__img"
-                  />
-                </div>
-                <div class="card__text">
-                  <span class="card__count">3K</span>
-                  <span class="card__title">cases done</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card__main">
-                <div class="wrapper-icon">
-                  <img
-                    src="../images-and-icons/icn-award-winning.svg"
-                    alt="award winning"
-                    class="card__img"
-                  />
-                </div>
-                <div class="card__text">
-                  <span class="card__count">45</span>
-                  <span class="card__title">award winning</span>
+            <!-- info section right for desktop view or top for mobile and tab view -->
+            <div class="cards__right">
+              <!-- first card right/bottom -->
+              <div class="card">
+                <div class="card__main">
+                  <div class="wrapper-icon">
+                    <img
+                      src="../images-and-icons/icn-award-winning.svg"
+                      alt="award winning"
+                      class="card__img"
+                    />
+                  </div>
+                  <div class="card__text">
+                    <span class="card__count">45</span>
+                    <span class="card__title">award winning</span>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="card">
-              <div class="card__main">
-                <div class="wrapper-icon">
-                  <img
-                    src="../images-and-icons/icn-countries-worldwid.svg"
-                    alt="countries worldwide"
-                    class="card__img"
-                  />
-                </div>
-                <div class="card__text">
-                  <span class="card__count">12</span>
-                  <span class="card__title">countries worldwide</span>
+              <!-- second card right/bottom -->
+              <div class="card">
+                <div class="card__main">
+                  <div class="wrapper-icon">
+                    <img
+                      src="../images-and-icons/icn-countries-worldwid.svg"
+                      alt="countries worldwide"
+                      class="card__img"
+                    />
+                  </div>
+                  <div class="card__text">
+                    <span class="card__count">12</span>
+                    <span class="card__title">countries worldwide</span>
+                  </div>
                 </div>
               </div>
             </div>
