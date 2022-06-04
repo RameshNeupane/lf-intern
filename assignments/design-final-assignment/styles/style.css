@@ -75,6 +75,7 @@ body {
 .nav ul li a:hover,
 .nav ul li a:active {
   color: #ffa62b;
+  transition: color 0.2s ease-in;
 }
 
 .header__icons {
@@ -122,7 +123,6 @@ body {
 .banner__btns {
   width: 50%;
   margin: 4rem auto;
-  /* overflow: hidden; */
 }
 
 .btn {
@@ -135,12 +135,12 @@ body {
   display: block;
   width: fit-content;
   margin: 2rem auto;
+  text-align: center;
 }
 
 .btn--primary {
   background-color: #ffa62b;
   border: 0.1rem solid #ffa62b;
-  /* float: left; */
 }
 
 .btn--primary:hover {
@@ -151,13 +151,13 @@ body {
 
 .btn--secondary {
   border: 0.1rem solid white;
-  /* float: right; */
 }
 
 .btn--secondary:hover {
   background-color: #ffa62b;
   border-color: transparent;
   transition: background-color 0.2s ease-in;
+  backface-visibility: hidden;
 }
 
 .header__bottom {
@@ -172,7 +172,6 @@ body {
   background-color: white;
   overflow: hidden;
   padding: 1rem;
-  /* margin: -4rem auto 4rem auto; */
 }
 
 .infos__left {
@@ -187,7 +186,6 @@ body {
 .info {
   width: calc(100% / 2);
   float: left;
-  /* background-color: lightblue; */
 }
 
 .info__main {
@@ -420,9 +418,56 @@ body {
   font-weight: 600;
 }
 
+/* section: What Clients Say */
+.client {
+  width: 100%;
+  background-color: #16697a;
+}
+
+.client__container {
+  padding: 8rem 0;
+}
+
+.client__top {
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.client__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.client__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* client: bottom section */
+/* .client__bottom {
+  width: 100%;
+  background-color: #16697a;
+}
+
+.client__cards {
+  width: 100%;
+  padding: 5rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.client__card {
+  position: absolute;
+
+} */
+
 /* section: Meet Our Team */
 
 .team {
+  clear: fix;
   width: 100%;
   background-color: #252b42;
 }
@@ -565,7 +610,7 @@ body {
   border-radius: 5px;
   width: 100%;
   height: 5rem;
-  padding: 1rem 0 1rem 2rem;
+  padding: 1rem 1rem 1rem 2rem;
 }
 
 .btn-wrapper {
@@ -584,7 +629,11 @@ body {
   color: white;
   font-size: 1.4rem;
   font-weight: 700;
-  margin-top
+}
+
+.btn--submit:hover {
+  background-color: #f19615;
+  transition: background-color 0.2s ease-in;
 }
 
 /* footer */

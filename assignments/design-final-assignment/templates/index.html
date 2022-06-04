@@ -294,6 +294,86 @@
       </div>
   </section>
 
+  <!-- section: What Clients Say -->
+  <section class="client">
+    <div class="container client__container">
+      <div class="client__top">
+        <h1 class="client__title">
+          What Clients Say
+        </h1>
+        <p class="client__text">
+          Problems trying to resolve the conflict between
+          the two major realms of Classical physics: Newtonian mechanics
+        </p>
+      </div>
+
+    </div>
+
+    <!-- client botton section : card section -->
+    <!-- <div class="client__bottom"> -->
+    <!-- cards container -->
+    <!-- <div class="client__cards"> -->
+    <!-- client-1 card -->
+    <!-- <div class="client__card client__card-1">
+          <img src="../images-and-icons/client-1.png" alt="client img" class="client__img">
+
+          <div class="client__card-main">
+            <div class="client__name">Regina Miles</div>
+            <div class="client__post">Designer</div>
+            <img src="../images-and-icons/stars.png" alt="ratings" class="stars">
+            <p class="client__description">
+              This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a
+              new view of time first and then space. This proved
+              to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view
+              of time first and then space.
+            </p>
+          </div>
+        </div> -->
+
+    <!-- client-2 card -->
+    <!-- <div class="client__card client__card-2">
+          <img src="../images-and-icons/client-1.png" alt="client img" class="client__img">
+
+          <div class="client__card-main">
+            <div class="client__name">Regina Miles</div>
+            <div class="client__post">Designer</div>
+            <img src="../images-and-icons/stars.png" alt="ratings" class="stars">
+            <p class="client__description">
+              This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a
+              new view of time first and then space. This proved
+              to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view
+              of time first and then space.
+            </p>
+          </div>
+        </div> -->
+
+    <!-- client-3 card -->
+    <!-- <div class="client__card client__card-3">
+          <img src="../images-and-icons/client-2.png" alt="client img" class="client__img">
+
+          <div class="client__card-main">
+            <div class="client__name">Regina Miles</div>
+            <div class="client__post">Designer</div>
+            <img src="../images-and-icons/stars.png" alt="ratings" class="stars">
+            <p class="client__description">
+              This proved to be impossible using the traditional
+              concepts of space and time. Einstein developed a
+              new view of time first and then space. This proved
+              to be impossible using the traditional concepts of
+              space and time. Einstein developed a new view
+              of time first and then space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+
   <!-- section: Meet Our Team -->
   <section class="team">
     <div class="container team__container">
@@ -402,24 +482,30 @@
           <img src="../images-and-icons/form-image.png" alt="girls looking into laptop" class="branch__bottom-img">
         </div>
 
+        <!-- form component -->
         <div class="form-container">
           <h2 class="form-container__title">
             Get A Free Quote Here
           </h2>
+
+          <!-- form section -->
           <form action="#" class="form" method="post">
+            <!-- name -->
             <div class="form__input-container">
               <label for="name">Name*</label>
-              <input type="text" name="name" id="name" class="form__input" placeholder="Full Name">
+              <input type="text" name="name" id="name" class="form__input" placeholder="Full Name" required>
             </div>
 
+            <!-- email -->
             <div class="form__input-container">
               <label for="email">Email*</label>
-              <input type="email" name="email" id="email" class="form__input" placeholder="example@gmail.com">
+              <input type="email" name="email" id="email" class="form__input" placeholder="example@gmail.com" required>
             </div>
 
+            <!-- department select -->
             <div class="form__input-container">
               <label for="department">Department*</label>
-              <select name="department" id="department" class="form__input">
+              <select name="department" id="department" class="form__input" required>
                 <option value="">Please Select</option>
                 <option value="HR department">HR department</option>
                 <option value="development">Development</option>
@@ -427,9 +513,10 @@
               </select>
             </div>
 
+            <!-- time select -->
             <div class="form__input-container">
               <label for="time">Time*</label>
-              <select name="time" id="time" class="form__input">
+              <select name="time" id="time" class="form__input" required>
                 <option value="">4:00 Available</option>
                 <option value="3 pm">3 PM</option>
                 <option value="9 am">9 AM</option>
@@ -438,6 +525,7 @@
             </div>
           </form>
 
+          <!-- submit button -->
           <div class="btn-wrapper">
             <a href="#" class="btn--submit">Book Appointment</a>
           </div>
