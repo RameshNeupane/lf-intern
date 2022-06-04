@@ -12,34 +12,58 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.header {
+  width: 100%;
+}
+
 .header__top {
   width: 100%;
   background-color: #252b42;
-  /* background-image: url("../images-and-icons/background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
+}
+
+@media screen and (min-width: 1024px) {
+  .header__top {
+    background-color: transparent;
+    background-image: url("../images-and-icons/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .container {
   max-width: 90%;
   margin: 0 auto;
-  overflow: hidden;
-  clear: both;
+  /* overflow: hidden; */
+  /* position: relative; */
+  /* clear: both; */
+}
+
+.logo-wrapper {
+  float: left;
+  padding-top: 3.6rem;
 }
 
 .header__logo {
-  float: left;
   font-size: 2.4rem;
   font-weight: 700;
   color: white;
   text-decoration: none;
-  margin: 3.6rem 0;
 }
 
 .wrapper__toggle {
   float: right;
-  margin: 4rem 0;
+  padding-top: 4rem;
 }
 
 .icn__toggle {
@@ -47,11 +71,10 @@ body {
 }
 
 .nav {
-  float: none;
-  clear: both;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: none;
+  padding-top: 3rem;
 }
 
 .nav.active {
@@ -94,14 +117,62 @@ body {
   width: 2rem;
 }
 
+/* responsive navigation for device with min-width 1024px */
+@media screen and (min-width: 1024px) {
+  .wrapper__toggle {
+    display: none;
+  }
+
+  .nav {
+    display: block;
+    float: right;
+    width: 38rem;
+    padding-top: 4.5rem;
+  }
+
+  .nav ul li {
+    float: left;
+    margin-right: 2rem;
+  }
+
+  .header__icons {
+    width: fit-content;
+    float: right;
+    margin: 0;
+  }
+
+  .search-wrapper,
+  .cart-wrapper {
+    margin: auto;
+    float: left;
+  }
+
+  .search-wrapper {
+    margin-right: 2rem;
+  }
+}
+
 .banner__main {
   width: 100%;
-  margin: 5rem auto;
+  /* margin: 8rem auto; */
+  padding: 10rem 0;
 }
 
 .banner__title {
   width: 90%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .banner__title {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__title {
+    width: 70%;
+  }
 }
 
 .banner__title h1 {
@@ -111,18 +182,37 @@ body {
   color: white;
 }
 
+@media screen and (min-width: 1024px) {
+  .banner__title h1 {
+    font-size: 4rem;
+  }
+}
+
 .banner__text {
   width: 90%;
-  margin: 4rem auto;
+  margin: 0 auto;
+  padding: 4rem 0;
   font-size: 1.5rem;
   font-weight: 500;
   text-align: center;
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .banner__text {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__text {
+    width: 50%;
+  }
+}
+
 .banner__btns {
   width: 50%;
-  margin: 4rem auto;
+  margin: 0 auto;
 }
 
 .btn {
@@ -134,13 +224,14 @@ body {
   border-radius: 3rem;
   display: block;
   width: fit-content;
-  margin: 2rem auto;
+  margin: 0 auto;
   text-align: center;
 }
 
 .btn--primary {
   background-color: #ffa62b;
   border: 0.1rem solid #ffa62b;
+  margin-bottom: 1.5rem;
 }
 
 .btn--primary:hover {
@@ -157,7 +248,26 @@ body {
   background-color: #ffa62b;
   border-color: transparent;
   transition: background-color 0.2s ease-in;
-  backface-visibility: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__btns {
+    width: 36rem;
+  }
+
+  .btns {
+    margin: auto;
+  }
+
+  .btn--primary {
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .btn--secondary {
+    float: right;
+  }
 }
 
 .header__bottom {
@@ -235,7 +345,7 @@ body {
 .card {
   width: calc(100% / 2);
   background-color: white;
-  width: 90%;
+  width: 80%;
   margin: 0 auto 3rem auto;
   padding: 2rem auto;
   overflow: hidden;
@@ -256,7 +366,7 @@ body {
 }
 
 .card__main {
-  max-width: 70%;
+  width: 70%;
   margin: 2rem auto;
 }
 
@@ -665,9 +775,9 @@ body {
   padding: 3rem 0;
 }
 
-.footer-icons {
+/* .footer__icons {
   width: 100%;
-}
+} */
 
 .footer__icon {
   width: fit-content;
@@ -736,4 +846,24 @@ body {
   font-size: 1rem;
   font-weight: 600;
   text-align: center;
+}
+
+/* footer responsive for 640px */
+@media screen and (min-width: 640px) {
+  .get-in-touch {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer__icons {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .footer__shortcuts {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+  }
 }
