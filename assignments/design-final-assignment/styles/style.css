@@ -44,9 +44,6 @@ body {
 .container {
   max-width: 90%;
   margin: 0 auto;
-  /* overflow: hidden; */
-  /* position: relative; */
-  /* clear: both; */
 }
 
 .logo-wrapper {
@@ -72,7 +69,6 @@ body {
 
 .nav {
   width: 100%;
-  /* overflow: hidden; */
   display: none;
   padding-top: 3rem;
 }
@@ -154,7 +150,6 @@ body {
 
 .banner__main {
   width: 100%;
-  /* margin: 8rem auto; */
   padding: 10rem 0;
 }
 
@@ -273,25 +268,19 @@ body {
 .header__bottom {
   width: 100%;
   background-color: #252b42;
-  overflow: hidden;
-  padding: 2rem 0;
 }
 
 .header__infos {
   width: 100%;
   background-color: white;
-  overflow: hidden;
-  padding: 1rem;
 }
 
 .infos__left {
   width: 100%;
-  overflow: hidden;
 }
 
 .infos__right {
   width: 100%;
-  overflow: hidden;
 }
 .info {
   width: calc(100% / 2);
@@ -334,21 +323,16 @@ body {
 
 .cards__left {
   width: 100%;
-  overflow: hidden;
 }
 
 .cards__right {
   width: 100%;
-  overflow: hidden;
 }
 
 .card {
-  width: calc(100% / 2);
   background-color: white;
   width: 80%;
   margin: 0 auto 3rem auto;
-  padding: 2rem auto;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -367,7 +351,12 @@ body {
 
 .card__main {
   width: 70%;
-  margin: 2rem auto;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.card--last {
+  margin-bottom: 0;
 }
 
 .wrapper-card-icon {
@@ -378,7 +367,7 @@ body {
 .card__title {
   font-weight: 700;
   font-size: 1.6rem;
-  margin: 2rem;
+  padding: 2rem 0;
   color: #252b42;
   text-transform: capitalize;
   text-align: center;
@@ -388,7 +377,7 @@ body {
   font-weight: 700;
   font-size: 1.4rem;
   color: #737373;
-  margin: 2rem;
+  padding-bottom: 2rem;
 }
 
 .card__btn {
@@ -396,14 +385,21 @@ body {
   border: 0.1rem solid #00a0c1;
   color: #00a0c1;
   width: fit-content;
-  margin: 2rem auto;
+  margin: 0 auto;
+}
+
+.icn-arrow {
+  padding-left: 0.5rem;
 }
 
 /* section-3 styles */
 .section-3 {
   width: 100%;
   background-color: #252b42;
-  clear: both;
+}
+
+.section-3__container {
+  padding: 5rem 0;
 }
 
 .section-3__top {
@@ -414,7 +410,7 @@ body {
 .section-3__title {
   width: 80%;
   text-align: center;
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 2.5rem;
   color: white;
@@ -425,20 +421,18 @@ body {
   font-weight: 500;
   font-size: 1rem;
   color: white;
-  margin-bottom: 2rem;
+  padding: 2rem 0;
 }
 
 .section-3__bottom {
   width: 90%;
-  margin: 2rem auto 0 auto;
-  overflow: hidden;
+  margin: 0 auto;
 }
 
 .video-container {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .video {
@@ -459,9 +453,7 @@ body {
 
 .btn-play {
   display: inline-block;
-  width: 5rem;
-  height: 5rem;
-  z-index: 99;
+  padding: 3rem;
   background-color: #00a0c1;
   position: relative;
   border-radius: 50%;
@@ -577,7 +569,6 @@ body {
 /* section: Meet Our Team */
 
 .team {
-  clear: fix;
   width: 100%;
   background-color: #252b42;
 }
@@ -774,10 +765,6 @@ body {
   font-weight: 500;
   padding: 3rem 0;
 }
-
-/* .footer__icons {
-  width: 100%;
-} */
 
 .footer__icon {
   width: fit-content;
