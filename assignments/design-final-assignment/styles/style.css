@@ -321,7 +321,6 @@ body {
   width: 90%;
   margin: 2rem auto 0 auto;
   overflow: hidden;
-  /* top: 0; */
 }
 
 .video-container {
@@ -374,7 +373,6 @@ body {
 .section-3__bottom-right {
   width: 100%;
   padding: 2rem 0;
-  /* clear: both; */
   color: white;
 }
 
@@ -396,7 +394,6 @@ body {
 
 .section-3__list-container {
   width: 100%;
-  /* padding: 2rem 0; */
 }
 
 .section-3__bottom-list {
@@ -408,10 +405,6 @@ body {
   float: left;
   margin-right: 2rem;
 }
-
-/* .list__text {
-  float: right;
-} */
 
 .list__title {
   font-size: 1.6rem;
@@ -441,10 +434,6 @@ body {
   padding: 5rem 0;
 }
 
-.get-in-touch {
-  /* clear: both; */
-}
-
 .footer__top-title {
   font-size: 2rem;
   text-transform: capitalize;
@@ -459,7 +448,6 @@ body {
 
 .footer-icons {
   width: 100%;
-  /* display: block; */
 }
 
 .footer__icon {
@@ -473,18 +461,21 @@ body {
 }
 
 .footer__shortcuts {
-  width: 100%;
+  width: fit-content;
   clear: both;
   float: none;
   padding-top: 4rem;
 }
 
 .footer__shortcut {
+  float: left;
   padding-bottom: 3rem;
+  margin-right: 5rem;
 }
 
 .footer__shortcut:last-child {
   padding-bottom: 0;
+  margin-right: 0;
 }
 
 .shortcut__title {
