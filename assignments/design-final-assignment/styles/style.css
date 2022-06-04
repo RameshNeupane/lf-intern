@@ -54,6 +54,10 @@ body {
   display: none;
 }
 
+.nav.active {
+  display: block;
+}
+
 .nav ul li {
   list-style-type: none;
   width: fit-content;
