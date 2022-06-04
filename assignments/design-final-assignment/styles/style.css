@@ -319,7 +319,7 @@ body {
 
 .section-3__bottom {
   width: 90%;
-  margin: 2rem auto;
+  margin: 2rem auto 0 auto;
   overflow: hidden;
   /* top: 0; */
 }
@@ -420,6 +420,90 @@ body {
 }
 
 .list__desc {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* footer */
+/* footer top */
+.footer {
+  width: 100%;
+}
+
+.footer__top {
+  width: 100%;
+  background-color: #252b42;
+  color: white;
+}
+
+.footer__top-div {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.get-in-touch {
+  /* clear: both; */
+}
+
+.footer__top-title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.footer__top-desc {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 3rem 0;
+}
+
+.footer-icons {
+  width: 100%;
+  /* display: block; */
+}
+
+.footer__icon {
+  width: fit-content;
+  float: left;
+  margin-right: 2rem;
+}
+
+.footer__icon a img {
+  width: 2.5rem;
+}
+
+.footer__shortcuts {
+  width: 100%;
+  clear: both;
+  float: none;
+  padding-top: 4rem;
+}
+
+.footer__shortcut {
+  padding-bottom: 3rem;
+}
+
+.footer__shortcut:last-child {
+  padding-bottom: 0;
+}
+
+.shortcut__title {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.shortcut__item {
+  list-style-type: none;
+  padding-bottom: 1rem;
+}
+
+.shortcut__item:last-child {
+  padding-bottom: 0;
+}
+
+.shortcut__item a {
+  text-decoration: none;
+  color: white;
   font-size: 1.4rem;
   font-weight: 600;
 }
