@@ -336,6 +336,27 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .cards__left {
+    margin-bottom: 5rem;
+  }
+
+  .card {
+    width: 45%;
+    margin: 0 auto;
+  }
+
+  .left__first,
+  .right__first {
+    float: left;
+  }
+
+  .left__last,
+  .right__last {
+    float: right;
+  }
+}
+
 .card--hover:hover {
   background-color: #00a0c1;
   transition: background-color 0.2s ease-in;
