@@ -146,6 +146,7 @@ body {
 .btn--primary:hover {
   background-color: #f19615;
   border-color: #f19615;
+  transition: background-color 0.2s ease-in;
 }
 
 .btn--secondary {
@@ -156,6 +157,7 @@ body {
 .btn--secondary:hover {
   background-color: #ffa62b;
   border-color: transparent;
+  transition: background-color 0.2s ease-in;
 }
 
 .header__bottom {
@@ -222,9 +224,6 @@ body {
   padding: 5rem 0;
 }
 
-/* .cards__main {
-} */
-
 .cards__left {
   width: 100%;
   overflow: hidden;
@@ -245,21 +244,21 @@ body {
   text-align: center;
 }
 
-.card:hover {
+.card--hover:hover {
   background-color: #00a0c1;
   transition: background-color 0.2s ease-in;
 }
 
-.card:hover div {
+.card--hover:hover div {
   color: white;
 }
 
-.card:hover a {
+.card--hover:hover a {
   background-color: white;
 }
 
 .card__main {
-  width: 80%;
+  max-width: 70%;
   margin: 2rem auto;
 }
 
@@ -316,7 +315,7 @@ body {
 .section-3__text {
   text-align: center;
   font-weight: 500;
-  font-size: 1.4rem;
+  font-size: 1rem;
   color: white;
   margin-bottom: 2rem;
 }
@@ -392,7 +391,7 @@ body {
 }
 
 .section-3__bottom-text {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -417,8 +416,62 @@ body {
 }
 
 .list__desc {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* section: Meet Our Team */
+
+.team {
+  width: 100%;
+  background-color: #252b42;
+}
+
+.team__container {
+  padding: 5rem 0;
+}
+
+.team__top {
+  width: 60%;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.team__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.team__text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.card__img {
+  width: 50%;
+}
+
+.team__position {
+  color: #ffa62b;
   font-size: 1.4rem;
   font-weight: 600;
+  padding: 1rem 0 1.5rem 0;
+}
+
+.team-card__title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #252b42;
+}
+
+.team-card__text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #737373;
+  padding: 0.8rem 0 1rem 0;
 }
 
 /* footer */
