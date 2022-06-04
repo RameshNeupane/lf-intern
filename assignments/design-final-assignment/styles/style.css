@@ -160,13 +160,17 @@ body {
 
 @media screen and (min-width: 768px) {
   .banner__title {
-    width: 80%;
+    width: 60%;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  .banner__main {
+    padding-bottom: 15rem;
+  }
+
   .banner__title {
-    width: 70%;
+    width: 60%;
   }
 }
 
@@ -282,9 +286,26 @@ body {
 .infos__right {
   width: 100%;
 }
-.info {
+
+.header__info {
   width: calc(100% / 2);
   float: left;
+}
+
+@media screen and (min-width: 1024px) {
+  .header__infos {
+    transform: translateY(-6rem);
+  }
+
+  .infos__left {
+    width: 50%;
+    float: left;
+  }
+
+  .infos__right {
+    width: 50%;
+    float: right;
+  }
 }
 
 .info__main {
@@ -374,6 +395,28 @@ body {
   width: 70%;
   margin: 0 auto;
   padding: 2rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .cards__left {
+    width: 48%;
+    float: left;
+    margin: 0;
+  }
+
+  .cards__right {
+    width: 48%;
+    float: right;
+  }
+
+  .card {
+    width: 46%;
+    height: fit-content;
+  }
+
+  .card__main {
+    width: 80%;
+  }
 }
 
 .card--last {
@@ -517,6 +560,28 @@ body {
 .section-3__bottom-head {
   width: 100%;
   padding: 2rem 0 3rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .section-3__top {
+    width: 50%;
+  }
+
+  .video-container {
+    width: 50%;
+    float: left;
+  }
+
+  .section-3__bottom-right {
+    width: 45%;
+    margin: 0;
+    float: right;
+    padding: 0;
+  }
+
+  .section-3__bottom-head {
+    padding-top: 1rem;
+  }
 }
 
 .section-3__bottom-title {
@@ -720,6 +785,23 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .branch__img-wrapper {
+    display: block;
+    width: 40%;
+    float: left;
+  }
+
+  .branch__bottom-img {
+    width: 100%;
+  }
+
+  .form-container {
+    width: 60%;
+    float: right;
+  }
+}
+
 .form-container__title {
   font-weight: 700;
   font-size: 2.5rem;
@@ -819,8 +901,6 @@ body {
 
 .footer__shortcuts {
   width: fit-content;
-  clear: both;
-  float: none;
   padding-top: 4rem;
 }
 
@@ -895,3 +975,26 @@ body {
     margin: 0 auto;
   }
 }
+
+/* @media screen and (min-width: 1024px) {
+  .get-in-touch {
+    margin: 0;
+    text-align: left;
+    width: 28%;
+  }
+
+  .footer__top-desc {
+    width: 80%;
+  }
+
+  .footer__icons {
+    margin: 0;
+  }
+
+  .footer__shortcuts {
+    float: right;
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+  }
+} */
