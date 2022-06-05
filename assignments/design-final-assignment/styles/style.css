@@ -855,6 +855,11 @@ body {
     width: 45%;
     float: left;
     text-align: left;
+    padding-bottom: 2rem;
+  }
+
+  .branch__desc {
+    margin: 0;
   }
 
   .map-wrapper {
