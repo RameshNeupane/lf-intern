@@ -50,9 +50,14 @@
   text-align: center;
   gap: 2rem;
   background: #ffffff;
-  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
   border-radius: 2rem;
+  box-shadow: 0 1rem 5rem rgba(38, 45, 118, 0.08);
   padding: 4rem;
+}
+
+.all-in-one__card:hover {
+  box-shadow: 0 0.5rem 5rem rgba(38, 45, 118, 0.2);
+  transition: box-shadow 0.2s ease ease-in;
 }
 
 .card__icon-wrapper {
