@@ -1,169 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/companies.css" />
+    <link rel="stylesheet" href="../styles/all-in-one.css" />
+    <title>Design - Flex Assignment</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="../styles/header.css">
-  <link rel="stylesheet" href="../styles/companies.css">
-  <title>Design - Flex Assignment</title>
-</head>
+  <body>
+    <!-- header section -->
+    <header class="header">
+      <div class="container">
+        <!-- navigation bar at the top -->
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="#">
+              <img
+                src="../icons-and-images/Polygon-logo.png"
+                alt="logo polygon"
+                class="logo__img"
+              />
+              <div class="logo__title">skilline</div>
+            </a>
+          </div>
 
-<body>
-  <!-- header section -->
-  <header class="header">
-    <div class="container">
-      <!-- navigation bar at the top -->
-      <div class="nav-bar">
-        <div class="logo">
-          <a href="#">
-            <img src="../icons-and-images/Polygon-logo.png" alt="logo polygon" class="logo__img">
-            <div class="logo__title">skilline</div>
-          </a>
+          <!-- navigation bar list right side of the bar -->
+          <nav class="nav-list">
+            <ul>
+              <li><a href="#" class="nav-list__item">home</a></li>
+              <li><a href="#" class="nav-list__item">careers</a></li>
+              <li><a href="#" class="nav-list__item">blogs</a></li>
+              <li><a href="#" class="nav-list__item">about us</a></li>
+              <li><a href="#" class="btn btn--secondary">login</a></li>
+              <li><a href="#" class="btn btn--primary">sign up</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
 
-        <!-- navigation bar list right side of the bar -->
-        <nav class="nav-list">
-          <ul>
-            <li><a href="#" class="nav-list__item">home</a></li>
-            <li><a href="#" class="nav-list__item">careers</a></li>
-            <li><a href="#" class="nav-list__item">blogs</a></li>
-            <li><a href="#" class="nav-list__item">about us</a></li>
-            <li><a href="#" class="btn btn--secondary">login</a></li>
-            <li><a href="#" class="btn btn--primary">sign up</a></li>
-          </ul>
-        </nav>
+      <!-- banner section below the nav bar -->
+      <div class="container">
+        <div class="banner">
+          <!-- banner text section left side of the bar -->
+          <div class="banner__text">
+            <h1 class="banner__title">
+              <span>Studying</span> online is now much easier
+            </h1>
+            <p class="banner__description">
+              Skilline is an interesting platform that will teach you in more an
+              interactive way
+            </p>
+
+            <div class="banner__btns">
+              <a href="#" class="btn btn--primary">Join for free</a>
+              <a href="#" class="btn btn--secondary btn--filled"
+                ><img
+                  src="../icons-and-images/btn-play.png"
+                  alt="bnt-play"
+                  class="btn--play"
+              /></a>
+              <p>Watch how it works</p>
+            </div>
+          </div>
+
+          <!-- image and info cards right side of the banner -->
+          <div class="banner__right">
+            <!-- image of the girl smiling -->
+            <div class="banner__img-wrapper">
+              <img
+                src="../icons-and-images/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt.png"
+                alt="a girl smiling"
+              />
+            </div>
+
+            <!-- statistics icon top right to the girl -->
+            <div class="icn-status-wrapper">
+              <img
+                src="../icons-and-images/icn-banner-right-top.png"
+                alt="icn-status"
+                class="icn-banner-right-top"
+              />
+            </div>
+
+            <!-- user experience card -->
+            <div class="user-exp">
+              <div class="user-exp__top">
+                <div class="profile-pic">
+                  <div class="profile-pic__wrapper">
+                    <img
+                      src="../icons-and-images/user-exp.png"
+                      alt="profile pic"
+                      class="user-pic"
+                    />
+                  </div>
+                  <div class="user-status__wrapper">
+                    <img
+                      src="../icons-and-images/user-exp-active.png"
+                      alt="user status"
+                      class="user-status"
+                    />
+                  </div>
+                </div>
+
+                <div class="profile__text">
+                  <div class="profile__title">User Experience Class</div>
+                  <div class="profile__subtitle">Today at 12.00 PM</div>
+                </div>
+              </div>
+
+              <div class="user-exp__button-wrapper">
+                <a href="#" class="btn btn--purple">Join now</a>
+              </div>
+            </div>
+
+            <!-- info showing students got assisted -->
+            <div class="assisted-std-card">
+              <div class="banner-icon-wrapper calendar-wrapper">
+                <img
+                  src="../icons-and-images/calendar.png"
+                  alt="icon calendar"
+                  class="banner-card__calendar"
+                />
+              </div>
+              <div class="assisted-std-card__text">
+                <div class="assisted-std-card__title">250k</div>
+                <div class="assisted-std-card__subtitle">Assisted Student</div>
+              </div>
+            </div>
+
+            <!-- notification card  -->
+            <div class="notification-card">
+              <div class="banner-icon-wrapper email-wrapper">
+                <img
+                  src="../icons-and-images/email.png"
+                  alt="icon email"
+                  class="banner-card__email"
+                />
+              </div>
+              <div class="notification-card__text">
+                <div class="notification-card__text-top">
+                  <div class="notification-card__title">Congratulations</div>
+                  <div class="green-tick-wrappper">
+                    <img
+                      src="../icons-and-images/green-tick.png"
+                      alt="icon green-tick"
+                    />
+                  </div>
+                </div>
+                <div class="notification-card__subtitle">
+                  Your admission completed
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- companies logo section -->
+    <div class="companies">
+      <div class="container companies-container">
+        <p class="companies__text">Trusted by 5,000+ Companies Worldwide</p>
+
+        <!-- companies logos -->
+        <div class="companies__logos">
+          <!-- google logo -->
+          <div class="company__logo">
+            <img src="../icons-and-images/google.png" alt="google logo" />
+          </div>
+
+          <!-- netflix logo -->
+          <div class="company__logo">
+            <img src="../icons-and-images/netflix.png" alt="netflix logo" />
+          </div>
+
+          <!-- airbnb logo -->
+          <div class="company__logo">
+            <img src="../icons-and-images/airbnb.png" alt="airbnb logo" />
+          </div>
+
+          <!-- amazon logo -->
+          <div class="company__logo">
+            <img src="../icons-and-images/amazon.png" alt="amazon logo" />
+          </div>
+
+          <!-- facebook logo -->
+          <div class="company__logo">
+            <img src="../icons-and-images/facebook.png" alt="facebook logo" />
+          </div>
+
+          <!-- grab logo -->
+          <div class="company__logo">
+            <img src="../icons-and-images/grab.png" alt="grab logo" />
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- banner section below the nav bar -->
-    <div class="container">
-      <div class="banner">
-        <!-- banner text section left side of the bar -->
-        <div class="banner__text">
-          <h1 class="banner__title">
-            <span>Studying</span> online is now much easier
+    <!-- section-3: all in one cloud software -->
+    <section class="all-in-one">
+      <div class="container all-in-one__container">
+        <div class="all-in-one__text">
+          <h1 class="all-in-one__title">
+            All-In-One <span>Cloud Software.</span>
           </h1>
-          <p class="banner__description">
-            Skilline is an interesting platform that will teach you in more an interactive way
+
+          <p class="all-in-one__description">
+            Skilline is one powerful online software suite that combines all the
+            tools needed to run a successful school or office.
           </p>
-
-          <div class="banner__btns">
-            <a href="#" class="btn btn--primary">Join for free</a>
-            <a href="#" class="btn btn--secondary btn--filled"><img src="../icons-and-images/btn-play.png"
-                alt="bnt-play" class="btn--play"></a>
-            <p>Watch how it works</p>
-          </div>
         </div>
 
-        <!-- image and info cards right side of the banner -->
-        <div class="banner__right">
-          <!-- image of the girl smiling -->
-          <div class="banner__img-wrapper">
-            <img src="../icons-and-images/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt.png"
-              alt="a girl smiling">
-          </div>
-
-          <!-- statistics icon top right to the girl -->
-          <div class="icn-status-wrapper">
-            <img src="../icons-and-images/icn-banner-right-top.png" alt="icn-status" class="icn-banner-right-top">
-          </div>
-
-          <!-- user experience card -->
-          <div class="user-exp">
-            <div class="user-exp__top">
-              <div class="profile-pic">
-                <div class="profile-pic__wrapper">
-                  <img src="../icons-and-images/user-exp.png" alt="profile pic" class="user-pic">
-                </div>
-                <div class="user-status__wrapper">
-                  <img src="../icons-and-images/user-exp-active.png" alt="user status" class="user-status">
-                </div>
-              </div>
-
-              <div class="profile__text">
-                <div class="profile__title">User Experience Class</div>
-                <div class="profile__subtitle">Today at 12.00 PM</div>
-              </div>
+        <!-- all-in-one card section -->
+        <div class="all-in-one__cards">
+          <div class="all-in-one__card">
+            <div class="card__icon-wrapper invoice-wrapper">
+              <img
+                src="../icons-and-images/online-billing.png"
+                alt="icon invoice"
+                class="card__icon"
+              />
             </div>
 
-            <div class="user-exp__button-wrapper">
-              <a href="#" class="btn btn--purple">Join now</a>
+            <div class="card__title">
+              Online Billing, Invoicing, & Contracts
+            </div>
+
+            <div class="card__description">
+              Simple and secure control of your organization&apos;s financial
+              and legal transactions. Send customized invoices and contracts
             </div>
           </div>
 
-          <!-- info showing students got assisted -->
-          <div class="assisted-std-card">
-            <div class="banner-icon-wrapper calendar-wrapper">
-              <img src="../icons-and-images/calendar.png" alt="icon calendar" class="banner-card__calendar">
+          <div class="all-in-one__card">
+            <div class="card__icon-wrapper schedule-wrapper">
+              <img
+                src="../icons-and-images/calendar.png"
+                alt="icon calendar"
+                class="card__icon"
+              />
             </div>
-            <div class="assisted-std-card__text">
-              <div class="assisted-std-card__title">250k</div>
-              <div class="assisted-std-card__subtitle">Assisted Student</div>
+
+            <div class="card__title">Easy Scheduling & Attendance Tracking</div>
+
+            <div class="card__description">
+              Schedule and reserve classrooms at one campus or multiple
+              campuses. Keep detailed records of student attendance
             </div>
           </div>
 
-          <!-- notification card  -->
-          <div class="notification-card">
-            <div class="banner-icon-wrapper email-wrapper">
-              <img src="../icons-and-images/email.png" alt="icon email" class="banner-card__email">
+          <div class="all-in-one__card">
+            <div class="card__icon-wrapper users-wrapper">
+              <img
+                src="../icons-and-images/users.png"
+                alt="icon users"
+                class="card__icon"
+              />
             </div>
-            <div class="notification-card__text">
-              <div class="notification-card__text-top">
-                <div class="notification-card__title">Congratulations</div>
-                <div class="green-tick-wrappper">
-                  <img src="../icons-and-images/green-tick.png" alt="icon green-tick">
-                </div>
 
-              </div>
-              <div class="notification-card__subtitle">Your admission completed</div>
+            <div class="card__title">Customer Tracking</div>
+
+            <div class="card__description">
+              Automate and track emails to individuals or groups. Skilline’s
+              built-in system helps organize your organization
             </div>
           </div>
         </div>
       </div>
-    </div>
-
-  </header>
-
-  <!-- companies logo section -->
-  <div class="companies">
-    <div class="container companies-container">
-      <p class="companies__text">
-        Trusted by 5,000+ Companies Worldwide
-      </p>
-
-      <div class="companies__logos">
-        <div class="company__logo">
-          <img src="../icons-and-images/google.png" alt="google logo">
-        </div>
-
-        <div class="company__logo">
-          <img src="../icons-and-images/netflix.png" alt="netflix logo">
-        </div>
-
-        <div class="company__logo">
-          <img src="../icons-and-images/airbnb.png" alt="airbnb logo">
-        </div>
-
-        <div class="company__logo">
-          <img src="../icons-and-images/amazon.png" alt="amazon logo">
-        </div>
-
-        <div class="company__logo">
-          <img src="../icons-and-images/facebook.png" alt="facebook logo">
-        </div>
-
-        <div class="company__logo">
-          <img src="../icons-and-images/grab.png" alt="grab logo">
-        </div>
-      </div>
-    </div>
-  </div>
-</body>
-
+    </section>
+  </body>
 </html>
