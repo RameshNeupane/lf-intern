@@ -10,12 +10,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/companies.css">
   <title>Design - Flex Assignment</title>
 </head>
 
 <body>
+  <!-- header section -->
   <header class="header">
     <div class="container">
+      <!-- navigation bar at the top -->
       <div class="nav-bar">
         <div class="logo">
           <a href="#">
@@ -24,6 +27,7 @@
           </a>
         </div>
 
+        <!-- navigation bar list right side of the bar -->
         <nav class="nav-list">
           <ul>
             <li><a href="#" class="nav-list__item">home</a></li>
@@ -37,8 +41,10 @@
       </div>
     </div>
 
+    <!-- banner section below the nav bar -->
     <div class="container">
       <div class="banner">
+        <!-- banner text section left side of the bar -->
         <div class="banner__text">
           <h1 class="banner__title">
             <span>Studying</span> online is now much easier
@@ -55,16 +61,20 @@
           </div>
         </div>
 
+        <!-- image and info cards right side of the banner -->
         <div class="banner__right">
+          <!-- image of the girl smiling -->
           <div class="banner__img-wrapper">
             <img src="../icons-and-images/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt.png"
               alt="a girl smiling">
           </div>
 
+          <!-- statistics icon top right to the girl -->
           <div class="icn-status-wrapper">
             <img src="../icons-and-images/icn-banner-right-top.png" alt="icn-status" class="icn-banner-right-top">
           </div>
 
+          <!-- user experience card -->
           <div class="user-exp">
             <div class="user-exp__top">
               <div class="profile-pic">
@@ -87,6 +97,7 @@
             </div>
           </div>
 
+          <!-- info showing students got assisted -->
           <div class="assisted-std-card">
             <div class="banner-icon-wrapper calendar-wrapper">
               <img src="../icons-and-images/calendar.png" alt="icon calendar" class="banner-card__calendar">
@@ -97,6 +108,7 @@
             </div>
           </div>
 
+          <!-- notification card  -->
           <div class="notification-card">
             <div class="banner-icon-wrapper email-wrapper">
               <img src="../icons-and-images/email.png" alt="icon email" class="banner-card__email">
@@ -117,6 +129,41 @@
     </div>
 
   </header>
+
+  <!-- companies logo section -->
+  <div class="companies">
+    <div class="container companies-container">
+      <p class="companies__text">
+        Trusted by 5,000+ Companies Worldwide
+      </p>
+
+      <div class="companies__logos">
+        <div class="company__logo">
+          <img src="../icons-and-images/google.png" alt="google logo">
+        </div>
+
+        <div class="company__logo">
+          <img src="../icons-and-images/netflix.png" alt="netflix logo">
+        </div>
+
+        <div class="company__logo">
+          <img src="../icons-and-images/airbnb.png" alt="airbnb logo">
+        </div>
+
+        <div class="company__logo">
+          <img src="../icons-and-images/amazon.png" alt="amazon logo">
+        </div>
+
+        <div class="company__logo">
+          <img src="../icons-and-images/facebook.png" alt="facebook logo">
+        </div>
+
+        <div class="company__logo">
+          <img src="../icons-and-images/grab.png" alt="grab logo">
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
