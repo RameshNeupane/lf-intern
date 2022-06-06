@@ -1,0 +1,45 @@
+.tools {
+  width: 100%;
+}
+
+.tools__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5rem 0;
+}
+
+.tools__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 40%;
+  gap: 2rem;
+}
+
+.tools__title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #2f327d;
+  width: 80%;
+}
+
+.tools__title span {
+  color: #f48c06;
+}
+
+.tools__description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #696984;
+  letter-spacing: 0.02em;
+}
+
+.tools__img-wrapper {
+  width: 40%;
+}
+
+.tools__img {
+  width: 100%;
+}
