@@ -45,6 +45,16 @@ body {
   font-size: 25px;
 }
 
+.subtitle a {
+  text-decoration: none;
+  color: white;
+}
+
+.subtitle a:hover {
+  color: rgba(0, 0, 50, 0.8);
+  transition: color 0.2s ease-in;
+}
+
 .intern-info {
   width: 50%;
   display: flex;
