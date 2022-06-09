@@ -19,7 +19,7 @@
 
 */
 
-const sortByKey = (arr, key) => {
+const sortByKey = ([...arr], key) => {
   for (let i = 0; i <= arr.length - 1; i++) {
     for (let j = i; j <= arr.length - 1; j++) {
       if (arr[i][key] > arr[j][key]) {
@@ -48,3 +48,4 @@ let arr = [
 
 const output = sortByKey(arr, "name");
 console.log(output);
+console.log(arr);
