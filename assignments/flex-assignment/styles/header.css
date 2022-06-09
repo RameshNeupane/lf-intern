@@ -23,6 +23,7 @@ a {
 
 .header {
   width: 100%;
+  height: 100%;
   background-color: #fff2e1;
   clip-path: ellipse(85% 60% at 50% 40%);
 }
@@ -115,7 +116,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* padding-top: 5rem; */
+  padding-top: 5rem;
 }
 
 .banner__text {
