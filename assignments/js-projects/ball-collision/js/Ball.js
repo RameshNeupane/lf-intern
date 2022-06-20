@@ -50,11 +50,21 @@ class Ball {
   checkCollisionWithBox() {
     // check collision in top and bottom wall of the container
     if (this.y + this.height >= CONTAINER_HEIGHT || this.y <= 0) {
+      if (this.y + this.height >= CONTAINER_HEIGHT) {
+        this.y = CONTAINER_HEIGHT - this.height;
+      } else {
+        this.y = 0;
+      }
       this.speedY *= -1;
     }
 
     // check collision in the left and right wall of the container
     if (this.x + this.width >= CONTAINER_WIDTH || this.x <= 0) {
+      if (this.x + this.width >= CONTAINER_WIDTH) {
+        this.x = CONTAINER_WIDTH - this.width;
+      } else {
+        this.x = 0;
+      }
       this.speedX *= -1;
     }
   }
